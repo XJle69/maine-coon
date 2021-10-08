@@ -418,13 +418,14 @@
     </footer>
 
     <div class="modal visually-hidden">
-      <div class="modal_content">
+      <div class="modal__content">
+        <button>Заерыть</button>
         <h4>Заказать звонок</h4>
         <p>Отвечаем и звоним каждый день, с 10:00 до 24:00</p>
         <form>
           <div>
             <label>Как к вам обращаться?</label>
-            <input type="text" placeholder="Введите имя" />
+            <input type="text" placeholder="Введите имя" name="name" />
           </div>
           <div>
             <label>Номер телефона</label>
@@ -432,13 +433,12 @@
               type="tel"
               placeholder="+7(___)___-__-__"
               pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}"
+              name="telephone"
             />
           </div>
           <p>
-            <a href="">
-              Нажимая на кнопку &laquo;Заказать звонок&raquo;, я даю согласие на
-              обработку персональных данных
-            </a>
+            Нажимая на кнопку &laquo;Заказать звонок&raquo;,
+            <a href="">я даю согласие на обработку персональных данных </a>
           </p>
           <button type="submit" value="Заказать звонок"></button>
         </form>
