@@ -1,14 +1,19 @@
 @import "vendor/normalize.scss",
-  "base/variables.scss",
-  "base/typography.scss",
-  "base/global.scss";
-  
-@import "components/header.scss",
-        "components/pets.scss",
-        "components/breed-features.scss",
-        "components/advantages.scss",
-        "components/care.scss",
-        "components/team.scss",
-        "components/faq.scss",
-        "components/reviews.scss",
-        "components/footer.scss";
+"base/variables.scss",
+"base/typography.scss",
+"base/global.scss";
+
+@import "components/text-style.scss",
+"components/social-list.scss",
+"components/button.scss",
+"components/header.scss",
+"components/pets.scss",
+"components/care.scss",
+"components/team.scss",
+"components/reviews.scss",
+"components/breed-features.scss",
+"components/faq.scss",
+"components/advantages.scss",
+"components/footer.scss",
+"components/modal.scss",
+"components/section.scss";

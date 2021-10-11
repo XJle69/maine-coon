@@ -1,0 +1,31 @@
+.social-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+  }
+  
+.social-list__item{
+  list-style: none;
+
+}
+  .social-list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    transition: 0.3s ease-out;
+  }
+  
+  .social-list svg {
+    transition: fill 0.3s ease-out, opacity 0.3s ease-out;
+  }
+  
+  .social-list svg:active {
+    opacity: 0.5;
+  }
+  

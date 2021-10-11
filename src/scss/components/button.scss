@@ -1,0 +1,23 @@
+.btn {
+  cursor: pointer;
+  background: none;
+  border: 1px solid $color-primary;
+  color: $color-white;  
+  font-size: 14px;
+  line-height: 16px;
+  padding: 17px 35px;
+  font-weight: 600;
+
+  &:hover {
+    box-shadow: 0 0 2px $color-white;
+    transition: 0.3s;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .btn{
+    line-height: 14px;
+    font-size: 12px;
+    padding: 12px 17px; 
+  }
+}
