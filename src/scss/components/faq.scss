@@ -352,13 +352,13 @@
 
 
 .faq__item__btn {
-
   position: relative;
   text-align: right;
-
   margin-bottom: 38px;
+}
 
-
-
-
+@media(max-width: $tablet-width) {
+  .faq__item__btn {
+    text-align: center;
+  }
 }
