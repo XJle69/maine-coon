@@ -351,11 +351,11 @@
                 <div class="faq__item-wrapper">
                   <button
                     type="button"
-                    class="faq__question faq__question--zeroOne active-btn"
+                    class="faq__question faq__question--zeroOne"
                   >
                     С какого возраста можно забирать котенка из питомника?
                   </button>
-                  <div class="faq__answer faq__answer--show">
+                  <div class="faq__answer">
                     <p>
                       Есть важная причина, почему котенка стоит забирать домой
                       только после трех месяцев, — это вакцинация. Первые
@@ -558,31 +558,48 @@
       </div>
     </footer>
 
-    <div class="modal visually-hidden">
+    <div class="modal">
       <div class="modal__content">
-        <button>Заерыть</button>
-        <h4>Заказать звонок</h4>
-        <p>Отвечаем и звоним каждый день, с 10:00 до 24:00</p>
-        <form>
-          <div>
-            <label>Как к вам обращаться?</label>
-            <input type="text" placeholder="Введите имя" name="name" />
+        <h2 class="modal__title">Заказать звонок</h2>
+        <p class="modal__subtitle">
+          Отвечаем и звоним каждый день, с 10:00 до 24:00
+        </p>
+        <form
+          class="header__form"
+          action="https://echo.htmlacademy.ru"
+          method="post"
+        >
+          <div class="header__form_main">
+            <div class="header__form_main-item">
+              <label class="header__form_data-title"
+                >Как к вам обращаться?</label
+              >
+              <input
+                class="header__form_data-input"
+                type="text"
+                placeholder="Введите имя"
+                name="name"
+              />
+            </div>
+            <div class="header__form_main-item">
+              <label class="header__form_data-title">Номер телефона</label>
+              <input
+                class="header__form_data-input"
+                type="tel"
+                placeholder="+7(___)___-__-__"
+                pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}"
+                name="telephone"
+              />
+            </div>
           </div>
-          <div>
-            <label>Номер телефона</label>
-            <input
-              type="tel"
-              placeholder="+7(___)___-__-__"
-              pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}"
-              name="telephone"
-            />
-          </div>
-          <p>
-            Нажимая на кнопку &laquo;Заказать звонок&raquo;,
-            <a href="">я даю согласие на обработку персональных данных </a>
-          </p>
-          <button type="submit" value="Заказать звонок"></button>
+          <div class="header__form_footer">
+            <div class="header__form_footer-agreement">
+                <p class="header__form_footer-text">Нажимая на кнопку «Заказать звонок», я даю <a href="#" class="header__form_footer-link">согласие на обработку персональных данных</a></p>
+            </div>
+            <button class="header__form_footer-submit" type="submit">заказать звонок</button>
+        </div>
         </form>
+        <button type="submit" class="modal__close">закрыть</button>
       </div>
     </div>
   </body>
