@@ -2,7 +2,7 @@
   cursor: pointer;
   background: none;
   border: 1px solid $color-primary;
-  color: $color-white;  
+  color: $color-white;
   font-size: 14px;
   line-height: 16px;
   padding: 17px 35px;
@@ -15,9 +15,9 @@
 }
 
 @media (max-width: $tablet-width) {
-  .btn{
+  .btn {
     line-height: 14px;
     font-size: 12px;
-    padding: 12px 17px; 
+    padding: 12px 17px;
   }
 }

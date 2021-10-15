@@ -1,14 +1,14 @@
 .header {
   position: relative;
   background-color: $color-dark;
-  background-image: url(../img/cat-main.png);
+  background-image: url("../img/main-cat.webp");
   background-position: 100% 100%;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 @media (max-width: $tablet-width) {
-  .header{
+  .header {
     height: 100vh;
   }
 }

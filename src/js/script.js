@@ -5,12 +5,10 @@ var question = document.querySelectorAll(".faq__question");
 var burger = document.querySelector(".navbar__burger");
 var navbarMenu = document.querySelector(".navbar-menu");
 
-var i;
-
 modalBtn.addEventListener("click", openModal);
 burger.addEventListener("click", openCloseNavbar);
 
-for (i = 0; i < question.length; i++) {
+for (var i = 0; i < question.length; i++) {
   question[i].addEventListener("click", openAnswer);
 }
 

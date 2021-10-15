@@ -1,10 +1,48 @@
 .care {
-  background-color: #333333;
-  background-image: url('../img/care-background.jpg');
+  background-color: #151313;
+  background-image: url("../img/bg-care-desktop@1x.webp");
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
 }
+
+@media (min-resolution: $retina-dpi),
+(min-resolution: $retina-dppx) {
+  .care {
+    background-image: url("../img/bg-care-desktop@2x.webp");
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .care {
+    background-image: url("../img/bg-care-tablet@1x.webp");
+    background-size: cover;
+  }
+}
+
+@media (max-width: $desktop-width),
+(max-width: $desktop-width) and (min-resolution: $retina-dpi),
+(max-width: $desktop-width) and (min-resolution: $retina-dppx) {
+  .care {
+    background-image: url("../img/bg-care-tablet@2x.webp");
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .care {
+    background-image: url("../img/bg-care-tablet@1x.webp");
+    background-size: cover;
+  }
+}
+
+@media (max-width: $tablet-width),
+(max-width: $tablet-width) and (min-resolution: $retina-dpi),
+(max-width: $tablet-width) and (min-resolution: $retina-dppx) {
+  .care {
+    background-image: url("../img/bg-care-tablet@2x.webp");
+  }
+}
+
 
 .care__wrapper {
   padding-top: 84px;
