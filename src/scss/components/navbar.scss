@@ -9,7 +9,8 @@
   position: absolute;
   left: 50%;
   margin-left: -26px;
-  top: 4.4%;
+  top: 10px;
+  z-index: 6;
 }
 
 .navbar-menu {
@@ -81,17 +82,19 @@
 
 
 
-.navbar__burger--none {
-  display: none;
-}
 
-.navbar__menu--none{
-  display: none;
-}
 
 @media (max-width: $tablet-width) {
   .navbar__burger {
-   display: block;
+    display: block;
+  }
+
+  .navbar__burger--none {
+    display: none;
+  }
+
+  .navbar__menu--none {
+    display: none;
   }
 }
 

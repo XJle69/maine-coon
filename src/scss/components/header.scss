@@ -5,9 +5,13 @@
   background-position: 100% 100%;
   background-repeat: no-repeat;
   background-size: contain;
-
 }
 
+@media (max-width: $tablet-width) {
+  .header{
+    height: 100vh;
+  }
+}
 
 
 .header__menu {
