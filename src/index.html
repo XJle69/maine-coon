@@ -15,12 +15,13 @@
             <li class="navbar-menu__item"><a href="#">Питомник</a></li>
             <li class="navbar-menu__item"><a href="#">Контакты</a></li>
           </ul>
-          <a class="header__logo">
+          <a class="navbar__logo">
             <span class="visually-hidden">Главный Логотип питомника</span>
             <svg width="52" height="24">
               <use xlink:href="img/sprite.svg#icon-crown"></use>
             </svg>
           </a>
+          <button class="navbar__burger navbar__burger--none">кнопка бургера</button>
         </nav>
 
         <div class="header__wrapper">
@@ -58,7 +59,7 @@
             <h1 class="header__title">Питомник Мейн-Кунов</h1>
 
             <p class="header__content-discr">
-              <b> Первый питомник с расширенным спектром услуг</b>
+              Первый питомник с расширенным спектром услуг
             </p>
 
             <a class="btn header__btn" href="#"> Смотреть котиков </a>
@@ -373,11 +374,11 @@
                 <div class="faq__item-wrapper">
                   <button
                     type="button"
-                    class="faq__question faq__question--zeroOne"
+                    class="faq__question active-btn faq__question--zeroOne"
                   >
                     С какого возраста можно забирать котенка из питомника?
                   </button>
-                  <div class="faq__answer">
+                  <div class="faq__answer faq__answer--show">
                     <p>
                       Есть важная причина, почему котенка стоит забирать домой
                       только после трех месяцев, — это вакцинация. Первые
@@ -580,7 +581,7 @@
       </div>
     </footer>
 
-    <div class="modal">
+    <div class="modal modal--hide">
       <div class="modal__content">
         <h2 class="modal__title">Заказать звонок</h2>
         <p class="modal__subtitle">

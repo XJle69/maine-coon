@@ -1,0 +1,102 @@
+.navbar {
+  position: relative;
+}
+
+.navbar__logo {
+  margin: auto;
+  width: 52px;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  margin-left: -26px;
+  top: 4.4%;
+}
+
+.navbar-menu {
+  text-align: center;
+  display: flex;
+  padding-top: 30px;
+  margin: 0;
+  width: 40%;
+}
+
+
+.navbar-menu li {
+  flex: 1;
+  display: inline;
+}
+
+.navbar__logo svg {
+  transition: fill 0.3s ease-out;
+
+  fill: $color-primary;
+  stroke: #151313;
+  stroke-width: 0.8;
+}
+
+.navbar__logo svg:hover,
+.navbar__logo svg:focus {
+  fill: $color-white;
+  stroke: $color-white;
+}
+
+@media (max-width: $desktop-width) {
+
+  .navbar-menu {
+    padding-left: 23px;
+    width: 45%;
+
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .header__logo {
+    top: 7px;
+  }
+
+  .navbar-menu {
+    padding-top: 50px;
+    padding-left: 0px;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.navbar__burger {
+  display: none;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  background-image: url("../img/icon-show.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 300;
+}
+
+
+
+.navbar__burger--none {
+  display: none;
+}
+
+.navbar__menu--none{
+  display: none;
+}
+
+@media (max-width: $tablet-width) {
+  .navbar__burger {
+   display: block;
+  }
+}
+
+.navbar__burger--active {
+  background-image: url("../img/icon-close.svg");
+  width: 18px;
+  height: 18px;
+}

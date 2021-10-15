@@ -8,66 +8,6 @@
 
 }
 
-.header__logo {
-  margin: auto;
-  width: 52px;
-  height: 30px;
-  position: absolute;
-  left: 50%;
-  margin-left: -26px;
-  top: 4.4%;
-}
-
-.navbar-menu {
-  text-align: center;
-  display: flex;
-  padding-top: 30px;
-  margin: 0;
-  width: 40%;
-}
-
-
-
-
-.navbar-menu li {
-  flex: 1;
-  display: inline;
-}
-
-.header__logo svg {
-  transition: fill 0.3s ease-out;
-
-  fill: $color-primary;
-  stroke: #151313;
-  stroke-width: 0.8;
-}
-
-.header__logo svg:hover,
-.header__logo svg:focus {
-  fill: $color-white;
-}
-
-@media (max-width: $desktop-width) {
-
-  .navbar-menu {
-    padding-left: 23px;
-    width: 45%;
-
-  }
-}
-
-@media (max-width: $tablet-width) {
-  .header__logo {
-    top: 7px;
-  }
-
-  .navbar-menu {
-    padding-top: 50px;
-    padding-left: 0px;
-    margin: 0;
-    width: 100%;
-  }
-}
 
 
 .header__menu {
@@ -113,7 +53,7 @@
 .header__content-location {
   display: block;
   max-width: 330px;
-  margin-top: 30px;
+  margin-top: 25px;
   margin-bottom: 17px;
 
   font-weight: normal;
@@ -181,7 +121,7 @@
   font-weight: normal;
   font-size: 52px;
   line-height: 60px;
-  font-family: "Yeseva One", "Georgia", serif;
+  font-family: "YesevaOne", "Georgia", serif;
   color: $color-white;
   font-style: normal;
 
