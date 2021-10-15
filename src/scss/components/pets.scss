@@ -359,18 +359,18 @@
   }
   
   .gallery__item-img--top {
-    width: 517px;
-    height: 214px;
+    max-width: 100%;
+    max-height: 214px;
   }
   
   .gallery__item-img--bottom {
-    width: 518px;
-    height: 241px;
+    max-width: 100%;
+    max-height: 241px;
   }
   
   .gallery__item-img--large {
-    width: 471px;
-    height: 485px;
+    max-width: 100%;
+    max-height: 485px;
   }
   
   @media (max-width: $desktop-width) {
@@ -416,38 +416,3 @@
     }
   }
   
-  .slider {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .slider__button {
-    display: block;
-    width: 14px;
-    height: 31px;
-  
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .slider__button--prev {
-    background-image: url("../img/icon-arrow.svg");
-  }
-  
-  .slider__button--next {
-    background-image: url("../img/icon-arrow.svg");
-
-  }
-  
-  .slider__adult-kittens {
-    display: none;
-  }
-  
-  .slider__kittens {
-    display: none;
-  }

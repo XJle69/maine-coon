@@ -1,0 +1,38 @@
+.slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider__button {
+  display: block;
+  width: 14px;
+  height: 31px;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+
+.slider__button--prev {
+  background-image: url("../img/icon-slider.svg");
+  transform: rotate(180deg);
+
+}
+
+
+.slider__button--next {
+  background-image: url("../img/icon-slider.svg");
+
+}
+
+.slider__adult-kittens {
+  display: none;
+}
+
+.slider__kittens {
+  display: none;
+}
